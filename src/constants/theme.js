@@ -1,0 +1,1 @@
+// defince constant color theme and constant React styling
