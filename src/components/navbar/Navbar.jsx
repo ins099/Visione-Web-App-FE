@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import logo from "../../assets/logo.svg";
+import logo from "../../logo.svg";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -17,20 +17,20 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </p>
           <p>
-            <a href="#aboutus">About Us</a>
+            <a href="#wvisione">About us</a>
           </p>
           <p>
-            <a href="#contact">Contact us</a>
+            <a href="#possibility">Contact Us</a>
           </p>
           <p>
-            <a href="#project">Our Projects</a>
+            <a href="#features">Our Projects</a>
           </p>
         </div>
       </div>
-      <div className="visione__navbar-sign">
+      {/* <div className="visione__navbar-sign">
         <p>Sign in</p>
         <button type="button">Sign up</button>
-      </div>
+      </div> */}
       <div className="visione__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
@@ -52,19 +52,19 @@ const Navbar = () => {
                 <a href="#home">Home</a>
               </p>
               <p>
-                <a href="#aboutus">About Us</a>
+                <a href="#wvisione">About us</a>
               </p>
               <p>
-                <a href="#contact">Contact us</a>
+                <a href="#possibility">Contact Us</a>
               </p>
               <p>
-                <a href="#project">Our Projects</a>
+                <a href="#features">Our Project</a>
               </p>
             </div>
-            <div className="visione__navbar-menu_container-links-sign">
+            {/* <div className="visione__navbar-menu_container-links-sign">
               <p>Sign in</p>
               <button type="button">Sign up</button>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
