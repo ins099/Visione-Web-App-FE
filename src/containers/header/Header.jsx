@@ -1,5 +1,4 @@
 import React from "react";
-import ai from "../../assets/ai.png";
 import { Navbar } from "../../components";
 import "./header.css";
 
