@@ -1,20 +1,45 @@
-.service_top__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.service_top__container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffff;
 }
 
-.service_top__container-form_container{
-    /* padding: 4rem 6rem; */
-    width: 50%;
-    background-color: beige;
+.service_top__container_form_container {
+  width: 50%;
+  background-color: #ffff;
 }
 
-.service_top__container-image{
-    height: 50%;
-    width: 50%;
+.service_top__container_image {
+  height: 50%;
+  width: 50%;
 }
 
-.service_top__container-form_container h1{
-    color: #C5AE8F 
+.service_top__container_subtitle {
+  color: #8c8c93;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
 }
+
+.service_top__container_main__heading {
+  font-family: var(--font-family);
+  font-weight: 800;
+  line-height: 30px;
+  font-size: 30px;
+  margin-top: 5px;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.service_top__container_content {
+  font-family: "Open Sans", sans-serif;
+  color: #555555;
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  line-height: 1.5;
+}
+
