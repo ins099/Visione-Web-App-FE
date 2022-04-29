@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./ServiceTop.css";
-import Button from "../button/button";
+import Button from "../button/Button";
 import { ServiceData } from "./serviceData";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 function ServiceTop() {
   const [content, setContent] = useState(ServiceData[0]);
@@ -29,6 +31,18 @@ function ServiceTop() {
           onClick={() => setContent(ServiceData[2])}
         />
         <p className="service_top__container_content">{content?.desc}</p>
+        <div className="service_top__container_video">
+          <div className="service_top__container_video_play_icon">
+            <div className="service_top__container_video_play_icon_circle">
+            <FontAwesomeIcon icon={faPlay} />
+            </div>
+
+          </div>
+          <div className="service_top__container_video_play_content">
+            <h6>Watch The Guideline</h6>
+            <p>Press button to play the video</p>
+          </div>
+        </div>
       </div>
       <div className="service_top__container_image">
         <img
