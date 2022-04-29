@@ -4,7 +4,8 @@ import {
   WhatVisione,
   Header,
   Services,
-  Projects
+  Projects,
+  Customers
 } from "./containers";
 
 import "./App.css";
@@ -15,6 +16,7 @@ const App = () => (
     <WhatVisione />
     <Services />
     <Projects/>
+    <Customers/>
   </div>
 );
 
