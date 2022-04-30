@@ -1,0 +1,49 @@
+.project__container__main__section{
+margin: 60px;
+}
+.project__container__main__heading{
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  color: #343436;
+  display: flex;
+  justify-content: center;
+}
+.project__container__subtitle {
+  color: #8c8c93;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 10px;
+}
+.grid-container h6 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 20px;
+}
+
+.grid-container p {
+  font-style: italic;
+  color: #555555;
+  font-size: 18px;
+  padding: 0px 20px 15px 20px;
+}
+.grid-container > div {
+  text-align: left;
+}
+.item1,
+.item2,
+.item3,
+.item4 {
+  background-color: white;
+}

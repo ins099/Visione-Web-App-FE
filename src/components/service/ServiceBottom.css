@@ -1,0 +1,27 @@
+.service_bottom__container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffff;
+  min-height: 600px;
+
+}
+
+.service_bottom__container_form_container {
+  width: 50%;
+  background-color: #a28e7c;
+  
+}
+
+.service_bottom__container_image {
+  width: 50%;
+  height: 50%;
+}
+
+.service_bottom__container_image img{
+    min-height: 600px;
+}
+
+.service_bottom__container_form_container_service_card{
+
+}
+

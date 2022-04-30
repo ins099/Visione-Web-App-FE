@@ -1,0 +1,25 @@
+.service_top__container__button{
+    color: #a28e7c;
+    background-color: #f3f3f3;
+    border: none;
+    margin-right: 2px;
+    padding: 21px 19px;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.service_top__container__clicked_button{
+    background-color: #a28e7c;
+    color:#f3f3f3;
+    border: none;
+    margin-right: 2px;
+    padding: 21px 19px;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+    font-weight: 700;
+    cursor: pointer;
+}

@@ -1,1 +1,0 @@
-// define constant variables and names.
