@@ -2,12 +2,34 @@ import React, { useState } from "react";
 import "./ServiceTop.css";
 import Button from "../button/Button";
 import { ServiceData } from "./serviceData";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 function ServiceTop() {
   const [content, setContent] = useState(ServiceData[0]);
-  console.log("content", content);
+  const [clicked1, setClicked1] = useState(true);
+  const [clicked2, setClicked2] = useState(false);
+  const [clicked3, setClicked3] = useState(false);
+  const clickHandler = (name) => {
+    if (name == "cm") {
+      setContent(ServiceData[0]);
+      setClicked1(true);
+      setClicked2(false);
+      setClicked3(false);
+    }
+    if (name == "dd") {
+      setContent(ServiceData[1]);
+      setClicked2(true);
+      setClicked1(false);
+      setClicked3(false);
+    }
+    if (name == "vc") {
+      setContent(ServiceData[2]);
+      setClicked3(true);
+      setClicked1(false);
+      setClicked2(false);
+    }
+  };
   return (
     <div className="service_top__container">
       <div className="service_top__container_form_container section__padding">
@@ -19,30 +41,33 @@ function ServiceTop() {
         </h1>
         <Button
           name="CONTENT MARKETING"
-          onClick={() => setContent(ServiceData[0])}
-          clicked="true"
+          clickHandler={() => clickHandler("cm")}
+          clicked={clicked1}
         />
         <Button
           name="DEVELOP & DEPLOY"
-          onClick={() => setContent(ServiceData[1])}
+          clickHandler={() => clickHandler("dd")}
+          clicked={clicked2}
         />
         <Button
           name="VIRAL CAMPAIGNS"
-          onClick={() => setContent(ServiceData[2])}
+          clickHandler={() => clickHandler("vc")}
+          clicked={clicked3}
         />
         <p className="service_top__container_content">{content?.desc}</p>
-        <div className="service_top__container_video">
-          <div className="service_top__container_video_play_icon">
-            <div className="service_top__container_video_play_icon_circle">
-            <FontAwesomeIcon icon={faPlay} />
+        {clicked1 && (
+          <div className="service_top__container_video">
+            <div className="service_top__container_video_play_icon">
+              <div className="service_top__container_video_play_icon_circle">
+                <FontAwesomeIcon icon={faPlay} />
+              </div>
             </div>
-
+            <div className="service_top__container_video_play_content">
+              <h6>Watch The Guideline</h6>
+              <p>Press button to play the video</p>
+            </div>
           </div>
-          <div className="service_top__container_video_play_content">
-            <h6>Watch The Guideline</h6>
-            <p>Press button to play the video</p>
-          </div>
-        </div>
+        )}
       </div>
       <div className="service_top__container_image">
         <img
