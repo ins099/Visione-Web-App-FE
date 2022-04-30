@@ -5,7 +5,8 @@ import {
   Header,
   Services,
   Projects,
-  Customers
+  Customers,
+  Contacts
 } from "./containers";
 
 import "./App.css";
@@ -17,6 +18,7 @@ const App = () => (
     <Services />
     <Projects/>
     <Customers/>
+    <Contacts/>
   </div>
 );
 
