@@ -8,6 +8,7 @@ import {
   Customers,
   Contacts
 } from "./containers";
+import Footer from "./components/footer/Footer";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ const App = () => (
     <Projects/>
     <Customers/>
     <Contacts/>
+    <Footer/>
   </div>
 );
 

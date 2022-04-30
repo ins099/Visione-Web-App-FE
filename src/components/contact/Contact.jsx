@@ -59,7 +59,6 @@ function Contact() {
             <input
               type="text"
               name="your-name"
-              value=""
               size="40"
               aria-required="true"
               aria-invalid="false"
@@ -71,7 +70,6 @@ function Contact() {
             <input
               type="text"
               name="your-email"
-              value=""
               size="40"
               aria-required="true"
               aria-invalid="false"
