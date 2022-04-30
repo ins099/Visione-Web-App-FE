@@ -1,8 +1,32 @@
 import React from "react";
 import "./Customer.css";
 import { CustomerData } from "./CustomerData";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 function Customer() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    customPaging: (i) => (
+      <div
+        style={{
+          width: "8px",
+          height: "8px",
+          border: "1px solid #646464",
+          borderRadius: "4px",
+          backgroundColor:"#fff"
+        }}
+      ></div>
+    ),
+  };
   return (
     <div className="customer__container section__padding">
       <div className=" customer__container__main__section">
@@ -11,6 +35,7 @@ function Customer() {
           Amazing layouts for your stunning website
         </h6>
       </div>
+      <Slider {...settings}>
       {CustomerData.map((x) => {
         return (
           <div className="customer__container__content__section">
@@ -31,6 +56,7 @@ function Customer() {
           </div>
         );
       })}
+      </Slider>
     </div>
   );
 }
